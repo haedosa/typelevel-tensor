@@ -76,7 +76,7 @@ Library
   -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
   -- Build-tools:         
 
-  ghc-options:     -Wall -O3  -fspec-constr-count=25
+  ghc-options:     -Wall -O3  -fspec-constr-count=25 -fsimpl-tick-factor=1000
   Default-Language: Haskell2010
 
 
@@ -97,6 +97,6 @@ test-suite runtests
                    HUnit                                    ,
                    QuickCheck >= 2 
     main-is: runtests.hs
-    
-    ghc-options:     -Wall -O3  -fspec-constr-count=25
+
+    ghc-options:     -Wall -O3  -fspec-constr-count=25 -fsimpl-tick-factor=1000
     Default-Language: Haskell2010
